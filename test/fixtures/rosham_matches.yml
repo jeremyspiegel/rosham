@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  host_code: MyString
+  guest_code: MyString
+  host_throw: 1
+  guest_throw: 1
+
+two:
+  host_code: MyString
+  guest_code: MyString
+  host_throw: 1
+  guest_throw: 1
