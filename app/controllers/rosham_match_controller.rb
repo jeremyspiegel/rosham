@@ -3,6 +3,7 @@ class RoshamMatchController < ApplicationController
   end
 
   def create
+    pending_match(params[:rosham_match][:from],params[:rosham_match][:to])
   end
 
   def show
