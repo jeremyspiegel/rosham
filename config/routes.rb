@@ -1,11 +1,5 @@
 Rosham::Application.routes.draw do
-  get "rosham_match/new"
-
-  get "rosham_match/create"
-
-  get "rosham_match/show"
-
-  get "rosham_match/update"
+  resources :rosham_matches
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
