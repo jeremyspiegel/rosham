@@ -1,4 +1,9 @@
-%h1 RoshamMatch#new
-%p Enter the e-mail address of someone you'd like to rosham with!
-%form
-    %input{:type => "text"}
+%p Start a new rosham match!
+= form_for RoshamMatch.new do |f|
+    .to
+        = f.label('to', 'To')
+        = f.email_field('to')
+    .from
+        = f.label('from', 'From')
+        = f.email_field('from')
+    = f.submit
