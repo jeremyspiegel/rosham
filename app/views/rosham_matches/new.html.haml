@@ -1,5 +1,5 @@
 %p Start a new rosham match!
-= form_for RoshamMatch.new do |f|
+= form_for @rosham_match do |f|
     .to
         = f.label('to', 'To')
         = f.email_field('to')

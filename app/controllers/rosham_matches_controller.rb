@@ -1,5 +1,6 @@
-class RoshamMatchController < ApplicationController
+class RoshamMatchesController < ApplicationController
   def new
+    @rosham_match = RoshamMatch.new
   end
 
   def create
