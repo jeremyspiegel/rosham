@@ -1,8 +1,8 @@
 class PendingMatch < ActionMailer::Base
-  default from: "mailer@rosh.am"
+  default :from => "jeremysspiegel@gmail.com"
 
-  def  pending_match(to, from)
-    @from = from
-    mail( :to => to, :subject => "You have a new rosham with #{from}!" )
+  def  pending_match(match)
+    @from = match[:host]
+    mail( :to => match[:guest], :subject => "You have a new rosham with #{@from}!" )
   end
 end

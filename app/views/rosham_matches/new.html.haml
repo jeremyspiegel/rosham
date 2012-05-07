@@ -1,9 +1,9 @@
 %p Start a new rosham match!
 = form_for @rosham_match do |f|
-    .to
-        = f.label('to', 'To')
-        = f.email_field('to')
-    .from
-        = f.label('from', 'From')
-        = f.email_field('from')
+    .guest
+        = f.label('guest', 'To')
+        = f.email_field('guest')
+    .host
+        = f.label('host', 'From')
+        = f.email_field('host')
     = f.submit

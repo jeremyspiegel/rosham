@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120423060032) do
+ActiveRecord::Schema.define(:version => 20120502052644) do
 
   create_table "rosham_matches", :force => true do |t|
     t.string   "host_code"
@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20120423060032) do
     t.integer  "guest_throw"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.string   "to"
-    t.string   "from"
+    t.string   "guest"
+    t.string   "host"
   end
 
 end
