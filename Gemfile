@@ -39,3 +39,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem "haml-rails"
+
+group :test, :development do
+  gem "rspec-rails"
+end
